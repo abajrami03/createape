@@ -1,0 +1,12 @@
+$small-width: 480px;
+$medium-width: 768px;
+$large-width: 1024px;
+$custmo-width:1270px;
+
+@mixin small-up {
+    @media (max-width: #{$custmo-width}) {
+        header{
+            padding: 60px 15px;
+        }
+    }
+  }

@@ -25,8 +25,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'createape' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+	<header id="masthead" class="site-header  row">
+		<div class="site-branding col-md-auto">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -44,9 +44,8 @@
 				<p class="site-description"><?php echo $createape_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'createape' ); ?></button>
+		<nav id="site-navigation" class="main-navigation col navbar-expand-lg">
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'createape' ); ?></button> -->
 			<?php
 			wp_nav_menu(
 				array(
@@ -55,5 +54,8 @@
 				)
 			);
 			?>
+			
 		</nav><!-- #site-navigation -->
+		<button class="hide_desk menu_toggle"><img alt="" src="/wp-content/uploads/2022/03/icons8-menu.svg"class="burger_menu" /> <img alt="" src="/wp-content/uploads/2022/03/icons8-loschen.svg" class="x_menu"/></button>
+		
 	</header><!-- #masthead -->

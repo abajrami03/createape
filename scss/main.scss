@@ -1,11 +1,5 @@
-header{
-    a{
-        color: black;
-    }
-}
-
-footer{
-    a{
-        color:blue
-    }
-}
+@import 'colors';
+@import 'fonts';
+@import 'generalstyle';
+@import 'responsive';
+@import 'header';

@@ -1,0 +1,37 @@
+$regular_font:Sofia Regular;
+$bold_font:	Sofia Semi Bold;
+h1{
+    font-family: $bold_font;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 78px;
+    text-align: center;
+    color:white;
+}
+h2{
+    font-family: $bold_font;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 65px;
+    text-align: center;
+    color:white;
+    margin-bottom: 65px;
+}
+h6{
+    font-family: $bold_font;
+    color:$content;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.14px;
+    color:white;
+    margin-bottom: 15px;
+}
+p{
+    font-family: $regular_font;
+    color:$content;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
